@@ -34,12 +34,35 @@
   </header>
 
   <RouterView />
-  <footer></footer>
+  <footer class="bg-cyan-600 py-6">
+    <div class="flex items-center justify-between">
+      <div class="h-1 w-1/3 bg-gray-800"></div>
+      <div class="flex w-1/3 justify-around">
+        <icon-youtube />
+        <icon-insta />
+        <icon-facebook />
+      </div>
+      <div class="h-1 w-1/3 bg-gray-800"></div>
+    </div>
+    <div class="flex justify-center p-2">
+      <logo />
+    </div>
+    <div class="flex justify-center p-2 text-xs font-light">
+      <p>Copyright © 2022 Snow Pop</p>
+    </div>
+    <div class="flex w-full justify-evenly p-2 text-gray-800">
+      <RouterLink to="/Contact" class="text-sm text-gray-800">Contact</RouterLink>
+      <RouterLink to="/Mentions" class="text-sm text-gray-800">Mentions Légales</RouterLink>
+    </div>
+  </footer>
 </template>
 
 <script>
 import LogoAccueil from "./components/icons/LogoAccueil.vue";
 import Logo from "./components/icons/Logo.vue";
+import IconFacebook from "./components/icons/IconFacebook.vue";
+import IconInsta from "./components/icons/IconInsta.vue";
+import IconYoutube from "./components/icons/IconYoutube.vue";
 import { MenuAlt1Icon, XIcon } from "@heroicons/vue/outline";
 
 export default {
@@ -48,6 +71,6 @@ export default {
       MenuOpen: false,
     };
   },
-  components: { Logo, LogoAccueil, MenuAlt1Icon, XIcon },
+  components: { Logo, LogoAccueil, MenuAlt1Icon, XIcon, IconFacebook, IconInsta, IconYoutube },
 };
 </script>
