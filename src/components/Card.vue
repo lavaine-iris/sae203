@@ -1,7 +1,9 @@
 <template>
   <figure class="relative">
-    <img class="border-4 border-yellow-500" src="../assets/plk.webp" alt="PLK" />
-    <figcaption class="absolute bottom-0 w-full bg-yellow-500 py-7 text-center opacity-50">PLK</figcaption>
+    <img class="border-4 border-yellow-500" :src="image" alt="artiste" />
+    <figcaption class="absolute bottom-0 w-full bg-yellow-500/50 py-7 text-center font-staatliches text-xl text-white">
+      {{ nom }}
+    </figcaption>
   </figure>
 </template>
 
@@ -10,7 +12,7 @@ export default {
   props: {
     image: {
       type: String,
-      default: "/src/assets/47ter.webp",
+      default: "/images/47ter.webp",
     },
     nom: {
       type: String,

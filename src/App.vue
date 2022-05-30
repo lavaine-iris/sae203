@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 flex h-14 w-screen items-center bg-yellow-500">
+  <header class="sticky top-0 z-50 flex h-14 w-screen items-center bg-yellow-500">
     <MenuAlt1Icon class="absolute right-4 h-8 w-8" @click="MenuOpen = !MenuOpen" v-if="!MenuOpen" />
     <XIcon class="absolute right-4 z-50 h-8 w-8" @click="MenuOpen = !MenuOpen" v-if="MenuOpen" />
     <Logo class="mx-auto" />
