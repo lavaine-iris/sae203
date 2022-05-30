@@ -8,7 +8,7 @@
   </div>
 
   <h2 class="font-staatliches text-xl">Où se déroule le festival ?</h2>
-  <img src="../assets/map-chatel.webp" alt="Carte Lieu du festival" />
+  <img src="../assets/map.webp" alt="Carte Lieu du festival" />
   <h2 class="font-staatliches text-xl">Châtel</h2>
   <img src="../assets/chatel.webp" alt="Châtel" />
   <p class="text-sm font-medium">
@@ -18,7 +18,7 @@
     nombreuses pistes vertes, bleues, rouges ou encore noires. Au total, plus de 650 kilomètres de pistes.
   </p>
   <p>@chatel_officiel</p>
-  <img src="../assets/insta1.webp" alt="Photo Instagram numéro 1" />
-  <img src="../assets/insta2.webp" alt="Photo Instagram numéro 2" />
-  <img src="../assets/insta3.webp" alt="Photo Instagram numéro 3" />
+  <img src="../assets/insta-1.webp" alt="Photo Instagram numéro 1" />
+  <img src="../assets/insta-2.webp" alt="Photo Instagram numéro 2" />
+  <img src="../assets/insta-3.webp" alt="Photo Instagram numéro 3" />
 </template>
