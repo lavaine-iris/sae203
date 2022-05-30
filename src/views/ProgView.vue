@@ -1,5 +1,5 @@
 <template>
-  <h2 class="font-staatliches text-xl">Programmation 2023</h2>
+  <h2 class="text-center font-staatliches text-xl">Programmation 2023</h2>
   <div>
     <h2 class="font-staatliches text-xl">Vendredi 3 février 2023</h2>
     <img class="border-4 border-yellow-500" src="../assets/47ter.webp" alt="47TER" />

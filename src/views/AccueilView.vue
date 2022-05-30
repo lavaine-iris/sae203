@@ -1,7 +1,7 @@
 <template>
   <main>
-    <logo-accueil />
-    <h2 class="font-staatliches text-xl text-cyan-600">3 - 4 - 5 Février 2023</h2>
+    <logo-accueil class="flex flex-col items-center" />
+    <h2 class="text-center font-staatliches text-xl text-cyan-600">3 - 4 - 5 Février 2023</h2>
     <img src="../assets/nekfeu1.webp" alt="Nekfeu" />
     <p class="bg-cyan-600 text-white">Découvrez la programmation du festival Snow Pop</p>
     <p class="bg-cyan-600 text-white">Réservez votre place dés maintenant !</p>
