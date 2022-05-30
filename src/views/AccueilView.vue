@@ -10,14 +10,14 @@
     <p class="font-staatliches text-xl">Galerie photo</p>
 
     <div class="relative flex w-full snap-x overflow-x-auto pb-14">
-      <div class="w-full shrink-0 shadow-xl">
-        <img src="../assets/chatel.webp" alt="Châtel" />
+      <div class="h-40 shrink-0 shadow-xl">
+        <img class="h-full w-full object-cover" src="../assets/chatel.webp" alt="Châtel" />
       </div>
-      <div class="w-full shrink-0 shadow-xl">
-        <img src="../assets/scene1.webp" alt="Première scène" />
+      <div class="h-40 shrink-0 shadow-xl">
+        <img class="h-full w-full object-cover" src="../assets/scene1.webp" alt="Première scène" />
       </div>
-      <div class="w-full shrink-0 shadow-xl">
-        <img src="../assets/scene2.webp" alt="Deuxième scène" />
+      <div class="h-40 shrink-0 shadow-xl">
+        <img class="h-full w-full object-cover" src="../assets/scene2.webp" alt="Deuxième scène" />
       </div>
     </div>
   </main>
