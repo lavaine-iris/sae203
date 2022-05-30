@@ -6,4 +6,6 @@
     </div>
     <div class="h-1 w-1/3 bg-yellow-500"></div>
   </div>
+
+  <h2 class="font-staatliches text-xl">Où se déroule le festival ?</h2>
 </template>

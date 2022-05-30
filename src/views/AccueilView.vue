@@ -1,6 +1,6 @@
 <template>
   <main>
-    <logo-accueil class="flex flex-col items-center" />
+    <logo-accueil class="justify-content-center m-auto flex flex-col justify-center" />
     <h2 class="text-center font-staatliches text-xl text-cyan-600">3 - 4 - 5 Février 2023</h2>
     <img src="../assets/nekfeu1.webp" alt="Nekfeu" />
     <p class="bg-cyan-600 text-white">Découvrez la programmation du festival Snow Pop</p>
@@ -8,9 +8,18 @@
     <img src="../assets/map.webp" alt="Carte" />
     <p class="bg-cyan-600 text-white">Où se déroule le festival Snow POP ?</p>
     <p class="font-staatliches text-xl">Galerie photo</p>
-    <img src="../assets/scene1.webp" alt="Première scène" />
-    <img src="../assets/scene2.webp" alt="Seconde scène" />
-    <img src="../assets/chatel.webp" alt="Chatel" />
+
+    <div class="relative flex w-full snap-x overflow-x-auto pb-14">
+      <div class="w-full shrink-0 shadow-xl">
+        <img src="../assets/chatel.webp" alt="Châtel" />
+      </div>
+      <div class="w-full shrink-0 shadow-xl">
+        <img src="../assets/scene1.webp" alt="Première scène" />
+      </div>
+      <div class="w-full shrink-0 shadow-xl">
+        <img src="../assets/scene2.webp" alt="Deuxième scène" />
+      </div>
+    </div>
   </main>
 </template>
 
