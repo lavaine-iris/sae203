@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AccueilView from '../views/AccueilView.vue'
 import ArtistesView from '../views/ArtistesView.vue'
+import ArtisteView from '../views/ArtisteView.vue'
 import BilleterieView from '../views/BilleterieView.vue'
 import ConcertView from '../views/ConcertView.vue'
 import ContactView from '../views/ContactView.vue'
@@ -14,6 +15,7 @@ const router = createRouter({
   routes: [
     { path: '/', name: 'Accueil', component: AccueilView },
     { path: '/Artistes', name: 'Artistes', component: ArtistesView },
+    { path: '/Artiste', name: 'Artiste', component: ArtisteView },
     { path: '/Billeterie', name: 'Billeterie', component: BilleterieView },
     { path: '/Concert', name: 'Concert', component: ConcertView },
     { path: '/Contact', name: 'Contact', component: ContactView },
