@@ -2,11 +2,28 @@
   <main>
     <logo-accueil class="justify-content-center m-auto flex flex-col justify-center" />
     <h2 class="text-center font-staatliches text-xl text-cyan-600">3 - 4 - 5 Février 2023</h2>
-    <img src="../assets/nekfeu1.webp" alt="Nekfeu" />
-    <p class="bg-cyan-600 text-white">Découvrez la programmation du festival Snow Pop</p>
-    <p class="bg-cyan-600 text-white">Réservez votre place dés maintenant !</p>
-    <img src="../assets/map.webp" alt="Carte" />
-    <p class="bg-cyan-600 text-white">Où se déroule le festival Snow POP ?</p>
+
+    <div>
+      <img src="../assets/nekfeu1.webp" alt="Nekfeu" />
+      <p class="bg-cyan-600 text-white">Découvrez la programmation du festival Snow Pop</p>
+    </div>
+
+    <figure class="relative">
+      <img src="../assets/nekfeu1.webp" alt="Nekfeu" />
+      <figcaption class="absolute -bottom-20 w-full bg-cyan-600 py-2 text-center font-staatliches text-xl text-white">
+        Découvrez la programmation du festival Snow Pop
+      </figcaption>
+    </figure>
+
+    <div>
+      <p class="bg-cyan-600 text-white">Réservez votre place dés maintenant !</p>
+    </div>
+
+    <div>
+      <img src="../assets/map.webp" alt="Carte" />
+      <p class="bg-cyan-600 text-white">Où se déroule le festival Snow POP ?</p>
+    </div>
+
     <p class="font-staatliches text-xl">Galerie photo</p>
 
     <div class="relative flex w-full snap-x overflow-x-auto pb-14">
