@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import IconLogo from "./components/icons/IconLogo.vue";
+import IconLogo from "./components/icons/Logo.vue";
 import { FilmIcon } from "@heroicons/vue/outline";
 export default {
   components: {},
