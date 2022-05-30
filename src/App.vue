@@ -2,13 +2,29 @@
   <header>
     <nav>
       <Logo />
-      <RouterLink to="../views/AccueilView.vue" class="text-blue-600 underline">Accueil</RouterLink>
-      <RouterLink to="../views/ProgView.vue" class="m-2 text-blue-600 underline">Programmation</RouterLink>
-      <RouterLink to="../views/FestivalView.vue" class="text-blue-600 underline">Festival</RouterLink>
-      <RouterLink to="../views/ConcertView.vue" class="m-2 text-blue-600 underline">Concert</RouterLink>
-      <RouterLink to="../views/ArtistesView.vue" class="m-2 text-blue-600 underline">Artistes</RouterLink>
-      <RouterLink to="../views/BilleterieView.vue" class="text-blue-600 underline">Billeterie</RouterLink>
-      <RouterLink to="../views/ContactView.vue" class="m-2 text-blue-600 underline">Contact</RouterLink>
+      <ul>
+        <li>
+          <RouterLink to="/" class="text-blue-600 underline">Accueil</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/Programmation" class="text-blue-600 underline">Programmation</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/Festival" class="text-blue-600 underline">Festival</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/Concert" class="text-blue-600 underline">Concert</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/Artistes" class="text-blue-600 underline">Artistes</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/Billeterie" class="text-blue-600 underline">Billeterie</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/Contact" class="text-blue-600 underline">Contact</RouterLink>
+        </li>
+      </ul>
     </nav>
   </header>
 
