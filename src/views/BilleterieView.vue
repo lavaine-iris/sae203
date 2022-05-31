@@ -8,11 +8,16 @@
       <div class="h-1 w-1/3 bg-yellow-500"></div>
     </div>
 
-    <CardBillet />
-    <CardBillet :nom="'Samedi 4 février'" />
-    <CardBillet :nom="'Dimanche 5 février'" />
-    <CardBilleterie />
-    <CardBilleterie :nom="'Forfait 3 jours'" :price="'90€'" :description="'VENDREDI 3 FEVRIER + SAMEDI 4 FEVRIER + DIMANCHE 5 FEVRIER'" />
+  <div class="grid grid-cols-1 lg:grid-cols-3 mx-auto">
+      <CardBillet />
+      <CardBillet :nom="'Samedi 4 février'" />
+      <CardBillet :nom="'Dimanche 5 février'" />
+    </div>
+
+    <div>
+      <CardBilleterie />
+      <CardBilleterie :nom="'Forfait 3 jours'" :price="'90€'" :description="'VENDREDI 3 FEVRIER + SAMEDI 4 FEVRIER + DIMANCHE 5 FEVRIER'" />
+    </div>
   </main>
 </template>
 

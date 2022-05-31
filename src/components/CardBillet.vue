@@ -1,5 +1,5 @@
 <template>
-      <div class="grid place-content-center bg-cyan-600 m-5 p-5 mx-14">
+      <div class="grid place-content-center bg-cyan-600 m-5 p-5 mx-14 max-w-xs">
     <div class="font-staatliches mb-2 text-white text-lg"> {{ nom }} </div>
     <p class="text-white font-staatliches text-lg text-center p-2">
       Billet 1 jour

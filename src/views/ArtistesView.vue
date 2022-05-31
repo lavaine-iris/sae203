@@ -7,7 +7,7 @@
       </div>
       <div class="h-1 w-1/3 bg-yellow-500"></div>
     </div>
-    <div class="flex flex-col gap-8 p-10">
+    <div class="gap-8 p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       <Card />
       <Card :nom="'PLK'" image="/images/plk.webp" />
       <Card :nom="'Nekfeu'" image="/images/nekfeu.webp" />

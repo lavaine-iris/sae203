@@ -11,7 +11,7 @@
     <h2 class="font-staatliches text-xl px-5">Pour nous contacter</h2>
     <p class="px-5 mt-4 font-normal">Si vous souhaitez nous contacter, veuillez remplir le formulaire ci-dessous</p>
    
-    <form class="mx-auto w-5/6 bg-cyan-600 p-4 mb-8 rounded-sm mt-5">
+    <form class="mx-auto w-5/6 bg-cyan-600 p-4 mb-8 rounded-sm mt-5 md:max-w-3xl">
     <div class="-mx-3 mb-6 flex flex-wrap">
       <div class="mb-6 w-full px-3 ">
         <label class="mb-2 block text-xs font-bold uppercase tracking-wide text-white" for="grid-first-name">Nom</label>
@@ -35,7 +35,7 @@
           placeholder="Votre nom*"
         />
       </div>
-      <div class="w-full px-3 md:w-1/2">
+      <div class="w-full px-3">
         <label class="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-200" for="grid-last-name">Prénom</label>
         <input
           class="
@@ -109,8 +109,6 @@
         <p class="italic text-gray-800">*Champs obligatoires</p>
       </div>
     </div>
-    <div class="md:flex md:items-center">
-      <div class="md:w-1/3">
         <button
           class="
             focus:shadow-outline
@@ -123,6 +121,7 @@
             text-black
             shadow
             hover:bg-cyan-900
+            hover:text-white
             focus:outline-none
             block
             mx-auto
@@ -131,9 +130,6 @@
         >
           Envoyer
         </button>
-      </div>
-      <div class="md:w-2/3"></div>
-    </div>
   </form>
   </main>
 </template>
