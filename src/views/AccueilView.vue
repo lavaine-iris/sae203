@@ -1,38 +1,16 @@
 <template>
   <main>
     <div class="mb-5">
-      <logo-accueil class="justify-content-center m-auto mt-5 flex flex-col justify-center" />
-      <h2 class="text-center font-staatliches text-xl text-cyan-600">3 - 4 - 5 Février 2023</h2>
+      <logo-accueil
+        class="justify-content-center m-auto mt-8 flex flex-col justify-center md:h-[300px] md:w-[600px] lg:h-[400px] lg:w-[700px]"
+      />
+      <h2 class="text-center font-staatliches text-xl text-cyan-600 md:text-4xl lg:text-5xl">3 - 4 - 5 Février 2023</h2>
     </div>
 
-  
-    <div class="block mx-auto p-10 w-4/5">
-      <div class="rounded overflow-hidden shadow-lg mb-5">
-        <img class="w-full" src="../assets/nekfeu-accueil.webp" alt="Nekfeu">
-      <div>
-        <p class="text-white font-staatliches bg-cyan-600 text-xl text-center p-5">
-        Découvrez la programmation du festival Snow Pop
-        </p>
-        </div>
-      </div>
-
-      <div class="rounded overflow-hidden shadow-lg mb-5">
-        <img class="w-full" src="../assets/billeterie.webp" alt="Billeterie">
-      <div>
-        <p class="text-white font-staatliches bg-cyan-600 text-xl text-center p-5">
-        Réservez votre place dés maintenant !
-        </p>
-        </div>
-      </div>
-
-      <div class="rounded overflow-hidden shadow-lg">
-        <img class="w-full" src="../assets/map-accueil.webp" alt="Billeterie">
-      <div>
-        <p class="text-white font-staatliches bg-cyan-600 text-xl text-center p-5">
-        Où se déroule le festival Snow POP ?
-        </p>
-        </div>
-      </div>
+    <div class="mx-auto grid w-4/5 grid-cols-1 p-10 lg:grid-cols-3">
+      <CardAccueil />
+      <CardAccueil :nom="'Réservez votre place dés maintenant !'" image="/public/images/billeterie.webp" />
+      <CardAccueil :nom="'Où se déroule le festival Snow POP ?'" image="/public/images/map-accueil.webp" />
     </div>
 
     <p class="font-staatliches text-xl">Galerie photo</p>
@@ -53,7 +31,8 @@
 
 <script>
 import LogoAccueil from "../components/icons/LogoAccueil.vue";
+import CardAccueil from "../components/CardAccueil.vue";
 export default {
-  components: { LogoAccueil },
+  components: { LogoAccueil, CardAccueil },
 };
 </script>

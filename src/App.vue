@@ -1,13 +1,37 @@
 <template>
   <header class="sticky top-0 z-50 flex h-14 w-screen items-center bg-yellow-500">
-    <MenuAlt1Icon class="absolute right-4 h-8 w-8" @click="MenuOpen = !MenuOpen" v-if="!MenuOpen" />
-    <XIcon class="absolute right-4 z-50 h-8 w-8" @click="MenuOpen = !MenuOpen" v-if="MenuOpen" />
+    <MenuAlt1Icon class="absolute right-4 h-8 w-8 lg:hidden" @click="MenuOpen = !MenuOpen" v-if="!MenuOpen" />
+    <XIcon class="absolute right-4 z-50 h-8 w-8 lg:hidden" @click="MenuOpen = !MenuOpen" v-if="MenuOpen" />
     <Logo class="mx-auto" />
     <nav
-      class="absolute left-0 top-0 bottom-0 right-0 h-screen -translate-x-full bg-yellow-500 opacity-0 xl:relative xl:translate-x"
+      class="
+        absolute
+        left-0
+        top-0
+        bottom-0
+        right-0
+        h-screen
+        -translate-x-full
+        bg-yellow-500
+        opacity-0
+        lg:relative lg:h-fit lg:translate-x-0 lg:opacity-100
+      "
       :class="MenuOpen && 'translate-x-0 opacity-100'"
     >
-      <ul class="flex h-full flex-col items-center justify-center gap-14 text-center font-staatliches text-3xl xl:flex-row">
+      <ul
+        class="
+          flex
+          h-full
+          flex-col
+          items-center
+          justify-center
+          gap-14
+          text-center
+          font-staatliches
+          text-3xl
+          lg:h-fit lg:flex-row lg:pr-8 lg:text-lg
+        "
+      >
         <li>
           <RouterLink to="/" @click="MenuOpen = !MenuOpen">Accueil</RouterLink>
         </li>

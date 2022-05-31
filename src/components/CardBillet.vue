@@ -1,13 +1,9 @@
 <template>
-      <div class="grid place-content-center bg-cyan-600 m-5 p-5 mx-14 max-w-xs">
-    <div class="font-staatliches mb-2 text-white text-lg"> {{ nom }} </div>
-    <p class="text-white font-staatliches text-lg text-center p-2">
-      Billet 1 jour
-    </p>
-    <p class="text-white font-staatliches text-7xl text-center p-2">
-      35€
-    </p>
-    <button class="bg-gray-200 font-staatliches py-2 px-8 text-center">Acheter</button>
+  <div class="m-5 mx-14 grid min-w-[15rem] max-w-xs place-content-center bg-cyan-600 p-5">
+    <div class="mb-2 font-staatliches text-lg text-white">{{ nom }}</div>
+    <p class="p-2 text-center font-staatliches text-lg text-white">Billet 1 jour</p>
+    <p class="p-2 text-center font-staatliches text-7xl text-white">35€</p>
+    <button class="bg-gray-200 py-2 px-8 text-center font-staatliches">Acheter</button>
   </div>
 </template>
 

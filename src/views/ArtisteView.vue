@@ -22,7 +22,7 @@
       parvient à créer la surprise auprès de ses fans et à les tenir en haleine avec les sorties de ses albums.
     </p></div></div>
     <h3 class="font-semibold m-6">Les derniers albums de Nekfeu</h3>
-    <div class="flex flex-col gap-8 p-12">
+    <div class="gap-8 p-12 grid grid-cols-1 lg:grid-cols-3">
       <img src="../assets/cd1.webp" alt="Album FEU de Nekfeu" />
       <img src="../assets/cd2.webp" alt="Album Les étoiles vagabondes de Nekfeu" />
       <img src="../assets/cd3.webp" alt="Album Cyborg de Nekfeu" />

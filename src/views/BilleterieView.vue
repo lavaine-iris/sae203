@@ -8,7 +8,7 @@
       <div class="h-1 w-1/3 bg-yellow-500"></div>
     </div>
 
-  <div class="grid grid-cols-1 lg:grid-cols-3 mx-auto">
+    <div class="grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
       <CardBillet />
       <CardBillet :nom="'Samedi 4 février'" />
       <CardBillet :nom="'Dimanche 5 février'" />
@@ -27,7 +27,8 @@ import CardBilleterie from "../components/CardBilleterie.vue";
 
 export default {
   components: {
-    CardBillet, CardBilleterie
+    CardBillet,
+    CardBilleterie,
   },
   data() {
     return {};
