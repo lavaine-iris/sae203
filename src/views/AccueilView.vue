@@ -6,32 +6,33 @@
     </div>
 
   
+    <div class="block mx-auto p-10 w-4/5">
+      <div class="rounded overflow-hidden shadow-lg mb-5">
+        <img class="w-full" src="../assets/nekfeu-accueil.webp" alt="Nekfeu">
+      <div>
+        <p class="text-white font-staatliches bg-cyan-600 text-xl text-center p-5">
+        Découvrez la programmation du festival Snow Pop
+        </p>
+        </div>
+      </div>
 
-    <div class="max-w-sm rounded overflow-hidden shadow-lg m-14">
-      <img class="w-full" src="../assets/nekfeu-accueil.webp" alt="Nekfeu">
-     <div>
-       <p class="text-white font-staatliches bg-cyan-600 text-xl text-center p-5">
-      Découvrez la programmation du festival Snow Pop
-       </p>
-       </div>
-    </div>
+      <div class="rounded overflow-hidden shadow-lg mb-5">
+        <img class="w-full" src="../assets/billeterie.webp" alt="Billeterie">
+      <div>
+        <p class="text-white font-staatliches bg-cyan-600 text-xl text-center p-5">
+        Réservez votre place dés maintenant !
+        </p>
+        </div>
+      </div>
 
-     <div class="max-w-sm rounded overflow-hidden shadow-lg m-14">
-      <img class="w-full" src="../assets/billeterie.webp" alt="Billeterie">
-     <div>
-       <p class="text-white font-staatliches bg-cyan-600 text-xl text-center p-5">
-      Réservez votre place dés maintenant !
-       </p>
-       </div>
-    </div>
-
-     <div class="max-w-sm rounded overflow-hidden shadow-lg m-14">
-      <img class="w-full" src="../assets/map-accueil.webp" alt="Billeterie">
-     <div>
-       <p class="text-white font-staatliches bg-cyan-600 text-xl text-center p-5">
-      Où se déroule le festival Snow POP ?
-       </p>
-       </div>
+      <div class="rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="../assets/map-accueil.webp" alt="Billeterie">
+      <div>
+        <p class="text-white font-staatliches bg-cyan-600 text-xl text-center p-5">
+        Où se déroule le festival Snow POP ?
+        </p>
+        </div>
+      </div>
     </div>
 
     <p class="font-staatliches text-xl">Galerie photo</p>
