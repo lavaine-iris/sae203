@@ -4,10 +4,10 @@
     <XIcon class="absolute right-4 z-50 h-8 w-8" @click="MenuOpen = !MenuOpen" v-if="MenuOpen" />
     <Logo class="mx-auto" />
     <nav
-      class="absolute left-0 top-0 bottom-0 right-0 h-screen -translate-x-full bg-yellow-500 opacity-0"
+      class="absolute left-0 top-0 bottom-0 right-0 h-screen -translate-x-full bg-yellow-500 opacity-0 xl:relative xl:translate-x"
       :class="MenuOpen && 'translate-x-0 opacity-100'"
     >
-      <ul class="flex h-full flex-col items-center justify-center gap-14 text-center font-staatliches text-3xl">
+      <ul class="flex h-full flex-col items-center justify-center gap-14 text-center font-staatliches text-3xl xl:flex-row">
         <li>
           <RouterLink to="/" @click="MenuOpen = !MenuOpen">Accueil</RouterLink>
         </li>

@@ -7,7 +7,7 @@
       </div>
       <div class="h-1 w-1/3 bg-yellow-500"></div>
     </div>
-    <div class="flex flex-col gap-8 p-10">
+    <div class="flex flex-col gap-8 p-10 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
       <h2 class="font-staatliches text-xl">Vendredi 3 février 2023</h2>
       <Card />
       <Card :nom="'Damso'" image="/images/damso.webp" />
