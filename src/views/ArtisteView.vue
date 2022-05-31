@@ -32,9 +32,9 @@
       “On verra” fait partie des quatre titres de Nekfeu dans le classement. Les trois autres sont issus de son dernier opus : “Dans
       l’univers”, “Elle pleut” et “Tricheur”. Les trois titres les plus streamés de “Les étoiles vagabondes”.
     </p>
-    <button class="m-6 rounded bg-cyan-600 py-2 px-4 font-staatliches text-2xl text-white">
+    <a href="./Billeterie"><button class="rounded bg-cyan-600 py-2 px-4 font-staatliches text-2xl text-white">
       Billeterie
-    </button>
+    </button></a>
   </main>
 </template>
 

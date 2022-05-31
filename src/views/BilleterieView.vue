@@ -8,6 +8,24 @@
       <div class="h-1 w-1/3 bg-yellow-500"></div>
     </div>
 
-    
+    <CardBillet />
+    <CardBillet :nom="'Samedi 4 février'" />
+    <CardBillet :nom="'Dimanche 5 février'" />
   </main>
 </template>
+
+<script>
+import CardBillet from "../components/CardBillet.vue";
+
+export default {
+  components: {
+    CardBillet,
+  },
+  data() {
+    return {};
+  },
+};
+</script>
+
+<style>
+</style>
