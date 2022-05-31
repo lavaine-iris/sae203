@@ -1,7 +1,9 @@
 <template>
-  <div class="mb-5 grid max-w-[250px] grid-cols-1 justify-items-center">
-    <img class="w-full" :src="image" alt="Nekfeu" />
-    <div class="min-h-[300px]">
+  <div class="grid max-w-[250px] grid-cols-1">
+    <div>
+      <img class="w-full" :src="image" alt="Nekfeu" />
+    </div>
+    <div class="mb-5">
       <p class="bg-cyan-600 p-5 text-center font-staatliches text-xl text-white">{{ nom }}</p>
     </div>
   </div>

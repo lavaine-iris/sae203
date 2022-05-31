@@ -8,7 +8,7 @@
       <div class="h-1 w-1/3 bg-yellow-500"></div>
     </div>
     <h2 class="px-5 font-staatliches text-xl">La petite scène</h2>
-    <img class="p-5" src="../assets/scene1.webp" alt="La petite scène" />
+    <img class="mx-auto p-5 md:w-3/4" src="../assets/scene1.webp" alt="La petite scène" />
     <h2 class="px-5 font-staatliches text-xl">Les différents artistes présents sur la petite scène</h2>
 
     <div class="grid grid-cols-1 gap-10 p-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
@@ -20,7 +20,7 @@
     </div>
 
     <h2 class="px-5 font-staatliches text-xl">La grande scène</h2>
-    <img class="p-5" src="../assets/scene2.webp" alt="La grande scène" />
+    <img class="mx-auto p-5 md:w-3/4" src="../assets/scene2.webp" alt="La grande scène" />
     <h2 class="px-5 font-staatliches text-xl">Les différents artistes présents sur la GRANDE scène</h2>
 
     <div class="grid grid-cols-1 gap-10 p-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">

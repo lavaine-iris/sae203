@@ -7,10 +7,14 @@
       <h2 class="text-center font-staatliches text-xl text-cyan-600 md:text-4xl lg:text-5xl">3 - 4 - 5 Février 2023</h2>
     </div>
 
-    <div class="mx-auto grid w-4/5 grid-cols-1 p-10 lg:grid-cols-3">
-      <CardAccueil />
-      <CardAccueil :nom="'Réservez votre place dés maintenant !'" image="/public/images/billeterie.webp" />
-      <CardAccueil :nom="'Où se déroule le festival Snow POP ?'" image="/public/images/map-accueil.webp" />
+    <div class="mx-auto grid w-4/5 grid-cols-1 justify-items-center lg:grid-cols-3">
+      <RouterLink to="/Programmation"><CardAccueil /></RouterLink>
+      <RouterLink to="/Billeterie"
+        ><CardAccueil :nom="'Réservez votre place dés maintenant !'" image="/public/images/billeterie.webp"
+      /></RouterLink>
+      <RouterLink to="/Festival"
+        ><CardAccueil :nom="'Où se déroule le festival Snow POP ?'" image="/public/images/map-accueil.webp"
+      /></RouterLink>
     </div>
 
     <p class="font-staatliches text-xl">Galerie photo</p>
