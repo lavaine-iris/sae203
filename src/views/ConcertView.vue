@@ -7,9 +7,9 @@
       </div>
       <div class="h-1 w-1/3 bg-yellow-500"></div>
     </div>
-    <h2 class="font-staatliches text-xl">La petite scène</h2>
-    <img src="../assets/scene1.webp" alt="La petite scène" />
-    <h2 class="font-staatliches text-xl">Les différents artistes présents sur la petite scène</h2>
+    <h2 class="font-staatliches text-xl px-5">La petite scène</h2>
+    <img class="mx-auto m-5" src="../assets/scene1.webp" alt="La petite scène" />
+    <h2 class="font-staatliches text-xl px-5">Les différents artistes présents sur la petite scène</h2>
 
     <div class="flex flex-col gap-10 p-10">
       <CardArtiste />
@@ -19,9 +19,9 @@
       <CardArtiste :nom="'Niska'" image="/images/niska.webp" />
     </div>
 
-    <h2 class="font-staatliches text-xl">La grande scène</h2>
-    <img src="../assets/scene2.webp" alt="La grande scène" />
-    <h2 class="font-staatliches text-xl">Les différents artistes présents sur la GRANDE scène</h2>
+    <h2 class="font-staatliches text-xl px-5">La grande scène</h2>
+    <img class="mx-auto p-5" src="../assets/scene2.webp" alt="La grande scène" />
+    <h2 class="font-staatliches text-xl px-5">Les différents artistes présents sur la GRANDE scène</h2>
 
     <div class="flex flex-col gap-10 p-10">
       <CardArtiste :nom="'PLK'" image="/images/plk.webp" />

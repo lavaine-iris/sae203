@@ -8,8 +8,8 @@
       <div class="h-1 w-1/3 bg-yellow-500"></div>
     </div>
 
-    <h2 class="font-staatliches text-xl">Pour nous contacter</h2>
-    <p>Si vous souhaitez nous contacter, veuillez remplir le formulaire ci-dessous</p>
+    <h2 class="font-staatliches text-xl px-5">Pour nous contacter</h2>
+    <p class="px-5 mt-4 font-normal">Si vous souhaitez nous contacter, veuillez remplir le formulaire ci-dessous</p>
    
     <form class="mx-auto w-5/6 bg-cyan-600 p-4 mb-8 rounded-sm mt-5">
     <div class="-mx-3 mb-6 flex flex-wrap">
