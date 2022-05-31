@@ -33,9 +33,9 @@
       l’univers”, “Elle pleut” et “Tricheur”. Les trois titres les plus streamés de “Les étoiles vagabondes”.
     </p>
     
-    <button class="rounded-md bg-cyan-600 py-2 px-4 font-staatliches text-2xl text-white"><a href="./Billeterie">
+    <router-link to="/Billeterie" class="bg-cyan-600 py-2 px-4 font-staatliches text-2xl text-white block w-max mx-auto mb-4">
       Billeterie
-    </a></button>
+    </router-link>
   </main>
 </template>
 
