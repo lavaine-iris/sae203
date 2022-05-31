@@ -1,11 +1,15 @@
 <template>
   <main>
-    <logo-accueil class="justify-content-center m-auto flex flex-col justify-center" />
-    <h2 class="text-center font-staatliches text-xl text-cyan-600">3 - 4 - 5 Février 2023</h2>
+    <div class="mb-5">
+      <logo-accueil class="justify-content-center m-auto mt-5 flex flex-col justify-center" />
+      <h2 class="text-center font-staatliches text-xl text-cyan-600">3 - 4 - 5 Février 2023</h2>
+    </div>
 
-    <div>
+    <div class="relative">
       <img src="../assets/nekfeu-accueil.webp" alt="Nekfeu" />
-      <p class="bg-cyan-600 text-white">Découvrez la programmation du festival Snow Pop</p>
+      <figcaption class="absolute -bottom-20 w-full bg-cyan-600 py-2 text-center font-staatliches text-xl text-white">
+        Découvrez la programmation du festival Snow Pop
+      </figcaption>
     </div>
 
     <figure class="relative">
