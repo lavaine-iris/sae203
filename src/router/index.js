@@ -9,6 +9,7 @@ import FestivalView from '../views/FestivalView.vue'
 import ProgView from '../views/ProgView.vue'
 import MentionsView from '../views/MentionsView.vue'
 import StyleView from '../views/StyleView.vue'
+import ErrorView from '../views/ErrorView.vue'
 
 
 const router = createRouter({
@@ -24,6 +25,7 @@ const router = createRouter({
     { path: '/Programmation', name: 'Programmation', component: ProgView },
     { path: '/Mentions', name: 'Mentions', component: MentionsView },
     { path: '/style-guide', name: 'Style', component: StyleView },
+    { path: '/404View', name: '404', component: ErrorView },
     // ici les autre routes
   ]
 })
