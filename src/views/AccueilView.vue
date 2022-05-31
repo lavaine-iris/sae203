@@ -5,27 +5,33 @@
       <h2 class="text-center font-staatliches text-xl text-cyan-600">3 - 4 - 5 Février 2023</h2>
     </div>
 
-    <div class="relative">
-      <img src="../assets/nekfeu-accueil.webp" alt="Nekfeu" />
-      <figcaption class="absolute -bottom-20 w-full bg-cyan-600 py-2 text-center font-staatliches text-xl text-white">
-        Découvrez la programmation du festival Snow Pop
-      </figcaption>
+  
+
+    <div class="max-w-sm rounded overflow-hidden shadow-lg m-14">
+      <img class="w-full" src="../assets/nekfeu-accueil.webp" alt="Nekfeu">
+     <div>
+       <p class="text-white font-staatliches bg-cyan-600 text-xl text-center p-5">
+      Découvrez la programmation du festival Snow Pop
+       </p>
+       </div>
     </div>
 
-    <figure class="relative">
-      <img src="../assets/billeterie.webp" alt="Nekfeu" />
-      <figcaption class="absolute -bottom-20 w-full bg-cyan-600 py-2 text-center font-staatliches text-xl text-white">
-        Découvrez la programmation du festival Snow Pop
-      </figcaption>
-    </figure>
-
-    <div>
-      <p class="bg-cyan-600 text-white">Réservez votre place dés maintenant !</p>
+     <div class="max-w-sm rounded overflow-hidden shadow-lg m-14">
+      <img class="w-full" src="../assets/billeterie.webp" alt="Billeterie">
+     <div>
+       <p class="text-white font-staatliches bg-cyan-600 text-xl text-center p-5">
+      Réservez votre place dés maintenant !
+       </p>
+       </div>
     </div>
 
-    <div>
-      <img src="../assets/map-accueil.webp" alt="Carte" />
-      <p class="bg-cyan-600 text-white">Où se déroule le festival Snow POP ?</p>
+     <div class="max-w-sm rounded overflow-hidden shadow-lg m-14">
+      <img class="w-full" src="../assets/map-accueil.webp" alt="Billeterie">
+     <div>
+       <p class="text-white font-staatliches bg-cyan-600 text-xl text-center p-5">
+      Où se déroule le festival Snow POP ?
+       </p>
+       </div>
     </div>
 
     <p class="font-staatliches text-xl">Galerie photo</p>
