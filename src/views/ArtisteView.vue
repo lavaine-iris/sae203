@@ -42,7 +42,10 @@
       <img class="m-6 mx-auto" src="../assets/video.webp" alt="Vidéo youtube Nekfeu" />
     </div>
 
-    <router-link to="/Billeterie" class="mx-auto mb-4 block w-max bg-cyan-600 py-2 px-4 font-staatliches text-2xl text-white">
+    <router-link
+      to="/Billeterie"
+      class="mx-auto mb-4 block w-max bg-cyan-600 py-2 px-4 font-staatliches text-2xl text-white hover:bg-sky-700"
+    >
       Billeterie
     </router-link>
   </main>

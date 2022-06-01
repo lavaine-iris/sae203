@@ -3,7 +3,7 @@
     <div class="mb-2 font-staatliches text-lg text-white">{{ nom }}</div>
     <p class="p-2 text-center font-staatliches text-lg text-white">Billet 1 jour</p>
     <p class="p-2 text-center font-staatliches text-7xl text-white">35€</p>
-    <button class="bg-gray-200 py-2 px-8 text-center font-staatliches">Acheter</button>
+    <button class="bg-gray-200 py-2 px-8 text-center font-staatliches text-lg hover:bg-yellow-500">Acheter</button>
   </div>
 </template>
 

@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       "colors": {
         // Ici vos couleurs exportées de Figma
+        "colors": {
+          "black-gray": "#333333"
+        },
       },
 
       "fontFamily": {

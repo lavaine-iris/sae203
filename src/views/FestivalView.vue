@@ -25,3 +25,4 @@
     <img src="../assets/insta-4.webp" alt="Photo Instagram numéro 4" />
   </div>
 </template>
+

@@ -8,7 +8,7 @@
       {{ description }}
     </p>
     <div class="mx-auto">
-      <button class="bg-gray-200 py-2 px-8 text-center font-staatliches">Acheter</button>
+      <button class="bg-gray-200 py-2 px-8 text-center font-staatliches text-lg hover:bg-cyan-600">Acheter</button>
     </div>
   </div>
 </template>

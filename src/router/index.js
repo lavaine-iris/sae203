@@ -11,7 +11,6 @@ import MentionsView from '../views/MentionsView.vue'
 import StyleView from '../views/StyleView.vue'
 import NotFoundComponent from '../views/404.vue'
 
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [

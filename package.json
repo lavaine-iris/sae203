@@ -8,8 +8,11 @@
   },
   "dependencies": {
     "@heroicons/vue": "^1.0.6",
+    "google-maps": "^4.3.3",
+    "scriptjs": "^2.5.9",
     "vue": "^3.2.33",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.14",
+    "vue2-google-maps": "^0.10.7"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",

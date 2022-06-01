@@ -1,6 +1,6 @@
 <template>
-  <main>
-    <div class="flex items-center justify-between py-8">
+  <main class="dark:bg-colors-black-gray">
+    <div class="flex items-center justify-between py-8 dark:text-white">
       <div class="h-1 w-1/3 bg-yellow-500"></div>
       <div class="flex w-1/3 justify-around">
         <h2 class="font-staatliches text-xl">Artistes</h2>
