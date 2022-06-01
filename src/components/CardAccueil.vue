@@ -14,7 +14,7 @@ export default {
   props: {
     image: {
       type: String,
-      default: "/public/images/nekfeu-accueil.webp",
+      default: "/images/nekfeu-accueil.webp",
     },
     nom: {
       type: String,
