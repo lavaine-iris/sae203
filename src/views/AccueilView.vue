@@ -1,8 +1,8 @@
 <template>
-  <main>
+  <main class="dark:bg-colors-black-gray">
     <div class="mb-5">
       <logo-accueil
-        class="justify-content-center m-auto mt-8 flex flex-col justify-center md:h-[300px] md:w-[600px] lg:h-[400px] lg:w-[700px]"
+        class="justify-content-center m-auto flex flex-col justify-center pt-8 md:h-[300px] md:w-[600px] lg:h-[400px] lg:w-[700px]"
       />
       <h2 class="text-center font-staatliches text-xl text-cyan-600 md:text-4xl lg:text-5xl">3 - 4 - 5 Février 2023</h2>
     </div>
