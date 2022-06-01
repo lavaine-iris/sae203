@@ -20,13 +20,13 @@
     <p class="font-staatliches text-xl">Galerie photo</p>
 
     <div class="relative flex w-full snap-x overflow-x-auto pb-14">
-      <div class="h-40 shrink-0 shadow-xl">
+      <div class="h-40 shrink-0 shadow-xl sm:h-60 md:h-80 lg:h-[28rem]">
         <img class="h-full w-full object-cover" src="../assets/chatel.webp" alt="Châtel" />
       </div>
-      <div class="h-40 shrink-0 shadow-xl">
+      <div class="h-40 shrink-0 shadow-xl sm:h-60 md:h-80 lg:h-[28rem]">
         <img class="h-full w-full object-cover" src="../assets/scene1.webp" alt="Première scène" />
       </div>
-      <div class="h-40 shrink-0 shadow-xl">
+      <div class="h-40 shrink-0 shadow-xl sm:h-60 md:h-80 lg:h-[28rem]">
         <img class="h-full w-full object-cover" src="../assets/scene2.webp" alt="Deuxième scène" />
       </div>
     </div>
