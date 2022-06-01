@@ -15,7 +15,7 @@
       <RouterLink to="/Festival"><CardAccueil :nom="'Où se déroule le festival Snow POP ?'" image="/images/map-accueil.webp" /></RouterLink>
     </div>
 
-    <p class="font-staatliches text-xl">Galerie photo</p>
+    <p class="px-5 font-staatliches text-xl">Galerie photo</p>
 
     <div class="relative flex w-full snap-x overflow-x-auto pb-14">
       <div class="h-40 shrink-0 shadow-xl sm:h-60 md:h-80 lg:h-[28rem]">
