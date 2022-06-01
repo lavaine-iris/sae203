@@ -12,7 +12,7 @@
         text-center
         font-staatliches
         text-xl text-white
-        dark:bg-gray-100 dark:text-black
+        dark:bg-gray-100/70 dark:text-black
       "
     >
       {{ nom }}
