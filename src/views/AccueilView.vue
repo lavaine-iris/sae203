@@ -10,11 +10,9 @@
     <div class="mx-auto grid w-4/5 grid-cols-1 justify-items-center lg:grid-cols-3">
       <RouterLink to="/Programmation"><CardAccueil /></RouterLink>
       <RouterLink to="/Billeterie"
-        ><CardAccueil :nom="'Réservez votre place dés maintenant !'" image="/public/images/billeterie.webp"
+        ><CardAccueil :nom="'Réservez votre place dés maintenant !'" image="/images/billeterie.webp"
       /></RouterLink>
-      <RouterLink to="/Festival"
-        ><CardAccueil :nom="'Où se déroule le festival Snow POP ?'" image="/public/images/map-accueil.webp"
-      /></RouterLink>
+      <RouterLink to="/Festival"><CardAccueil :nom="'Où se déroule le festival Snow POP ?'" image="/images/map-accueil.webp" /></RouterLink>
     </div>
 
     <p class="font-staatliches text-xl">Galerie photo</p>
