@@ -1,9 +1,9 @@
 <template>
-  <main>
+  <main class="dark:bg-colors-black-gray">
     <div class="flex items-center justify-between py-8">
       <div class="h-1 w-1/3 bg-yellow-500"></div>
       <div class="flex w-1/3 justify-around">
-        <h2 class="font-staatliches text-xl">Billetterie</h2>
+        <h2 class="font-staatliches text-xl dark:text-white">Billetterie</h2>
       </div>
       <div class="h-1 w-1/3 bg-yellow-500"></div>
     </div>
@@ -14,7 +14,7 @@
       <CardBillet :nom="'Dimanche 5 février'" />
     </div>
 
-    <div>
+    <div class="p-5">
       <CardBilleterie />
       <CardBilleterie :nom="'Forfait 3 jours'" :price="'90€'" :description="'VENDREDI 3 FEVRIER + SAMEDI 4 FEVRIER + DIMANCHE 5 FEVRIER'" />
     </div>

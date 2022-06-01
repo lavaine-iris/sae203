@@ -1,17 +1,19 @@
 <template>
-  <main>
+  <main class="dark:bg-colors-black-gray">
     <div class="flex items-center justify-between py-8">
       <div class="h-1 w-1/3 bg-yellow-500"></div>
       <div class="flex w-1/3 justify-around">
-        <h2 class="font-staatliches text-xl">Contact</h2>
+        <h2 class="font-staatliches text-xl dark:text-white">Contact</h2>
       </div>
       <div class="h-1 w-1/3 bg-yellow-500"></div>
     </div>
 
-    <h2 class="px-5 font-staatliches text-xl">Pour nous contacter</h2>
-    <p class="mt-4 px-5 font-normal">Si vous souhaitez nous contacter, veuillez remplir le formulaire ci-dessous</p>
+    <div class="dark:text-white">
+      <h2 class="px-5 font-staatliches text-xl">Pour nous contacter</h2>
+      <p class="mt-4 px-5 font-normal">Si vous souhaitez nous contacter, veuillez remplir le formulaire ci-dessous</p>
+    </div>
 
-    <form class="mx-auto mb-8 mt-5 w-5/6 rounded-sm bg-cyan-600 p-4 md:max-w-3xl">
+    <form class="mx-auto mt-5 mb-6 w-5/6 rounded-sm bg-cyan-600 p-8 md:max-w-3xl">
       <div class="-mx-3 mb-6 flex flex-wrap">
         <div class="mb-6 w-full px-3">
           <label class="mb-2 block text-xs font-bold uppercase tracking-wide text-white" for="grid-first-name">Nom</label>

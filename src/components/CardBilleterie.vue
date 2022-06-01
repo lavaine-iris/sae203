@@ -1,5 +1,5 @@
 <template>
-  <div class="m-5 grid place-content-center bg-yellow-500 p-5">
+  <div class="m-5 grid place-content-center gap-5 bg-yellow-500 p-5">
     <p class="p-2 text-center font-staatliches text-7xl text-white">
       {{ price }}
     </p>

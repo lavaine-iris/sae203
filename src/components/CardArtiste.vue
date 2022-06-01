@@ -1,7 +1,20 @@
 <template>
   <figure class="relative">
     <img class="rounded-full" :src="image" alt="artiste" />
-    <figcaption class="absolute -bottom-6 w-full rounded-full bg-gray-500/50 py-3 text-center font-staatliches text-xl text-white">
+    <figcaption
+      class="
+        absolute
+        -bottom-6
+        w-full
+        rounded-full
+        bg-gray-500/50
+        py-2
+        text-center
+        font-staatliches
+        text-xl text-white
+        dark:bg-gray-100 dark:text-black
+      "
+    >
       {{ nom }}
     </figcaption>
   </figure>
