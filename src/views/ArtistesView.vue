@@ -70,5 +70,13 @@ export default {
       });
     },
   },
+  computed: {
+    searchByDay() {
+      let query = this.query;
+      return this.ListeArtiste.filter(function (art) {
+        return art.jour.includes(query);
+      });
+    },
+  },
 };
 </script>

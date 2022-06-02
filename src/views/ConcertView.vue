@@ -14,11 +14,9 @@
     </div>
 
     <div class="grid grid-cols-1 gap-10 p-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-      <CardArtiste />
-      <CardArtiste :nom="'Laylow'" image="/images/laylow.webp" />
-      <CardArtiste :nom="'Naps'" image="/images/naps.webp" />
-      <CardArtiste :nom="'Koba la D'" image="/images/koba.webp" />
-      <CardArtiste :nom="'Niska'" image="/images/niska.webp" />
+      <RouterLink to="/Artiste" v-for="art in grandeScene" :key="art"
+        ><CardArtiste :nom="art.nom" :image="art.image" :scene="art.scene"
+      /></RouterLink>
     </div>
 
     <div class="dark:text-white">
@@ -28,27 +26,85 @@
     </div>
 
     <div class="grid grid-cols-1 gap-10 p-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-      <CardArtiste :nom="'PLK'" image="/images/plk.webp" />
-      <CardArtiste :nom="'Nekfeu'" image="/images/nekfeu.webp" />
-      <CardArtiste :nom="'Vald'" image="/images/vald.webp" />
-      <CardArtiste :nom="'Ninho'" image="/images/ninho.webp" />
-      <CardArtiste :nom="'Damso'" image="/images/damso.webp" />
+      <RouterLink to="/Artiste" v-for="art in petiteScene" :key="art"
+        ><CardArtiste :nom="art.nom" :image="art.image" :scene="art.scene"
+      /></RouterLink>
     </div>
   </main>
 </template>
 
 <script>
 import CardArtiste from "../components/CardArtiste.vue";
+import {
+  getFirestore,
+  collection,
+  doc,
+  query,
+  orderBy,
+  getDocs,
+  addDoc,
+  updateDoc,
+  deleteDoc,
+  onSnapshot,
+} from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
+import {
+  getStorage, // Obtenir le Cloud Storage
+  ref, // Pour créer une référence à un fichier à uploader
+  getDownloadURL, // Permet de récupérer l'adress complète d'un fichier du Storage
+  uploadString, // Permet d'uploader sur le Cloud Storage une image en Base64
+} from "https://www.gstatic.com/firebasejs/9.8.2/firebase-storage.js";
 
 export default {
   components: {
     CardArtiste,
   },
   data() {
-    return {};
+    return {
+      listeArtiste: [],
+      qGrand: 1,
+      qpetit: 2,
+    };
+  },
+  mounted() {
+    this.getArtiste();
+  },
+  methods: {
+    async getArtiste() {
+      const firestore = getFirestore();
+      const dbArt = collection(firestore, "artistes");
+      const q = query(dbArt, orderBy("nom", "asc"));
+      await onSnapshot(q, (snapshot) => {
+        this.listeArtiste = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        this.listeArtiste.forEach(function (personne) {
+          const storage = getStorage();
+          const spaceRef = ref(storage, "artistes/" + personne.image);
+          getDownloadURL(spaceRef)
+            .then((url) => {
+              personne.image = url;
+            })
+            .catch((error) => {
+              console.log("erreur download url", error);
+            });
+        });
+      });
+    },
+  },
+  computed: {
+    petiteScene() {
+      let query = this.qpetit;
+      return this.listeArtiste.filter(function (art) {
+        return art.scene.includes(query);
+      });
+    },
+    grandeScene() {
+      let query = this.qGrand;
+      return this.listeArtiste.filter(function (art) {
+        return art.scene.includes(query);
+      });
+    },
   },
 };
 </script>
-
-<style>
-</style>

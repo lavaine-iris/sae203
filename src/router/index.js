@@ -10,6 +10,7 @@ import ProgView from '../views/ProgView.vue'
 import MentionsView from '../views/MentionsView.vue'
 import StyleView from '../views/StyleView.vue'
 import NotFoundComponent from '../views/404.vue'
+import CreateView from '../views/billetterie/CreateView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,7 +25,8 @@ const router = createRouter({
     { path: '/Programmation', name: 'Programmation', component: ProgView },
     { path: '/Mentions', name: 'Mentions', component: MentionsView },
     { path: '/style-guide', name: 'Style', component: StyleView },
-    { path: '/:pathMatch(.*)', component: NotFoundComponent }
+    { path: '/:pathMatch(.*)', component: NotFoundComponent },
+    { path: '/Create', name: 'Create', component: CreateView },
     // ici les autre routes
   ]
 })

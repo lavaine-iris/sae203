@@ -8,15 +8,6 @@
     <MainColor class="border border-gray-500 bg-white"></MainColor>
   </div>
 
-  <p class="my-5 bg-yellow-400 text-center text-base text-white">Shades of Purple</p>
-  <div class="flex w-full px-5">
-    <MainColor class="bg-indigo-25"></MainColor>
-    <MainColor class="bg-indigo-50"></MainColor>
-    <MainColor class="bg-indigo-100"></MainColor>
-    <MainColor class="bg-indigo-200"></MainColor>
-    <MainColor class="bg-indigo-300"></MainColor>
-  </div>
-
   <p class="my-5 bg-yellow-400 text-center text-base text-white">Greyscale</p>
   <div class="mx-5 mt-5 flex">
     <MainColor class="bg-gray-50"></MainColor>
@@ -39,6 +30,17 @@
   <div class="Police px-5">
     <div class="my-2 flex items-center justify-between">
       <div class="font-inter">
+        <p class="font-bold">H1 / Headline 1</p>
+        <p class="font-light">Staatliches</p>
+        <p class="font-light">36px font size</p>
+      </div>
+      <div class="w-3/5">
+        <p class="text-right font-staatliches text-xl">Snow pop</p>
+      </div>
+    </div>
+
+    <div class="my-2 flex items-center justify-between">
+      <div class="font-inter">
         <p class="font-bold">H2 / Headline 2</p>
         <p class="font-light">Staatliches</p>
         <p class="font-light">24px font size</p>
@@ -49,28 +51,26 @@
     </div>
 
     <div class="my-2 flex items-center justify-between">
+      <div class="font-inter">
+        <p class="font-bold">H3 / Headline 3</p>
+        <p class="font-light">Inter - Semibold</p>
+        <p class="font-light">16px font size</p>
+      </div>
+      <div class="w-3/5">
+        <p class="text-right font-semibold">Un artiste aux multiples talents</p>
+      </div>
+    </div>
+
+    <div class="my-2 flex items-center justify-between">
       <div class="font-inter w-1/5">
         <p class="font-medium">Body Medium</p>
         <p class="font-light">Inter (Medium)</p>
         <p class="font-light">16px font size</p>
       </div>
       <div class="w-3/5">
-        <p class="font-inter text-right font-medium">
-          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
-          injected humour, or randomised words which don't look even slightly believable.
-        </p>
-      </div>
-    </div>
-    <div class="my-2 flex items-center justify-between">
-      <div class="font-inter w-1/5">
-        <p class="font-normal">Body XSmall</p>
-        <p class="font-light">Inter(Regular)</p>
-        <p class="font-light">12px font size</p>
-      </div>
-      <div class="w-3/5">
         <p class="font-inter text-right font-normal">
-          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
-          injected humour, or randomised words which don't look even slightly believable.
+          Châtel est un village de Haute-Savoie en France, et l'un des camps de base du domaine skiable des Portes du Soleil. Village
+          d'altitude situé au fond du val d'Abondance, dans le Chablais savoyard.
         </p>
       </div>
     </div>
@@ -82,9 +82,12 @@
   </div>
 
   <h3 class="my-5 bg-yellow-400 text-center text-base text-white">Composants</h3>
-  <div class="flex flex-col gap-8 p-10">
+  <div class="grid grid-cols-2 gap-8 p-10">
     <Card />
     <CardArtiste />
+    <CardAccueil />
+    <CardBillet />
+    <CardBilleterie />
   </div>
 </template>
 <script >
@@ -97,6 +100,9 @@ import IconFacebook from "../components/icons/IconFacebook.vue";
 import IconInsta from "../components/icons/IconInsta.vue";
 import IconYoutube from "../components/icons/IconYoutube.vue";
 import { MenuAlt1Icon, XIcon } from "@heroicons/vue/outline";
+import CardAccueil from "../components/CardAccueil.vue";
+import CardBillet from "../components/CardBillet.vue";
+import CardBilleterie from "../components/CardBilleterie.vue";
 
 export default {
   data() {
@@ -104,7 +110,21 @@ export default {
       MenuOpen: false,
     };
   },
-  components: { MainColor, Card, CardArtiste, Logo, LogoAccueil, MenuAlt1Icon, XIcon, IconFacebook, IconInsta, IconYoutube },
+  components: {
+    MainColor,
+    Card,
+    CardArtiste,
+    Logo,
+    LogoAccueil,
+    MenuAlt1Icon,
+    XIcon,
+    IconFacebook,
+    IconInsta,
+    IconYoutube,
+    CardAccueil,
+    CardBillet,
+    CardBilleterie,
+  },
 };
 </script>
 

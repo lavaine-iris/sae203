@@ -18,6 +18,10 @@
       <CardBilleterie />
       <CardBilleterie :nom="'Forfait 3 jours'" :price="'90€'" :description="'VENDREDI 3 FEVRIER + SAMEDI 4 FEVRIER + DIMANCHE 5 FEVRIER'" />
     </div>
+
+    <router-link to="/Create" class="mx-auto mb-4 block w-max bg-cyan-600 py-2 px-4 font-staatliches text-2xl text-white hover:bg-sky-700">
+      Modifier
+    </router-link>
   </main>
 </template>
 
