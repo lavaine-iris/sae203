@@ -12,7 +12,7 @@
         <RouterLink :to="{name:'Update', params:{id:art.id}}"><PencilAltIcon class="h-5 bg-white rounded-l-sm"/></RouterLink>
         <RouterLink :to="{name:'Delete', params:{id:art.id}}"><TrashIcon class="h-5 bg-white rounded-r-sm"/></RouterLink>
       </Card></RouterLink>
-      <RouterLink to="Create"><Card :nom="'ajouter'" :image="'/public/images/croix.png'"/></RouterLink>
+      <RouterLink to="Create"><Card :nom="'ajouter'" :image="'/images/croix.png'"/></RouterLink>
     </div>
   </main>
 </template>
