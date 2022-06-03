@@ -8,13 +8,18 @@
       <div class="h-1 w-1/3 bg-yellow-500"></div>
     </div>
     <div class="grid grid-cols-1 gap-8 p-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      <RouterLink to="/Artiste" v-for="art in listeArtiste" :key="art"><Card :nom="art.nom" :image="art.image" /></RouterLink>
+      <RouterLink to="/Artiste" v-for="art in listeArtiste" :key="art"><Card :nom="art.nom" :image="art.image" >
+        <RouterLink :to="{name:'Update', params:{id:art.id}}"><PencilAltIcon class="h-5 bg-white rounded-l-sm"/></RouterLink>
+        <RouterLink :to="{name:'Delete', params:{id:art.id}}"><TrashIcon class="h-5 bg-white rounded-r-sm"/></RouterLink>
+      </Card></RouterLink>
+      <RouterLink to="Create"><Card :nom="'ajouter'" :image="'/public/images/croix.png'"/></RouterLink>
     </div>
   </main>
 </template>
 
 <script>
 import Card from "../components/Card.vue";
+import { TrashIcon, PencilAltIcon } from "@heroicons/vue/outline";
 import {
   getFirestore,
   collection,
@@ -36,7 +41,7 @@ import {
 
 export default {
   components: {
-    Card,
+    Card, TrashIcon, PencilAltIcon
   },
   data() {
     return {

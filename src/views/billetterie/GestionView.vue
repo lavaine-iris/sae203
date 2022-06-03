@@ -1,18 +1,19 @@
 <template>
-  <h2 class="font-source-sans-pro m-auto w-4/5 text-base">Créer Billet</h2>
+  <div class="h-[80vh]">
+    <h2 class="font-source-sans-pro m-auto w-4/5 text-base">Créer Billet</h2>
   <div class="mx-auto grid w-4/5 grid-cols-3">
     <div class="flex h-10 overflow-hidden rounded-l-sm text-black">
-      <div class="bg-true-gray-25 flex items-center justify-center border-[1px] px-5">Nom</div>
-      <input class="w-full" type="text" placeholder="Date du billet" v-model="date" required />
+      <div class="bg-cyan-600 flex items-center justify-center border-[1px] px-5">Nom</div>
+      <input class="w-full bg-slate-100 pl-2" type="text" placeholder="Date du billet" v-model="date" required />
     </div>
     <div class="flex h-10 overflow-hidden rounded-l-sm text-black">
-      <div class="bg-true-gray-25 flex items-center justify-center border-[1px] px-5">Nom</div>
-      <input class="w-full" type="text" placeholder="Nom du billet" v-model="nom" required />
+      <div class="bg-cyan-600 flex items-center justify-center border-[1px] px-5">Nom</div>
+      <input class="w-full bg-slate-100 pl-2" type="text" placeholder="Nom du billet" v-model="nom" required />
     </div>
     <div class="flex h-10 w-full overflow-hidden rounded-r-sm text-black">
-      <div class="bg-true-gray-25 flex items-center justify-center border-[1px] px-5">Prix</div>
-      <input class="w-full" type="number" placeholder="Prix du billet" v-model="prix" required />
-      <div class="flex w-fit gap-3 bg-white px-3">
+      <div class="bg-cyan-600 flex items-center justify-center border-[1px] px-5">Prix</div>
+      <input class="w-full bg-slate-100 pl-2" type="text" placeholder="Prix du billet" v-model="prix" required />
+      <div class="flex w-fit gap-3 bg-cyan-600 px-3">
         <button type="button" @click.prevent="createBillet()"><SaveIcon class="w-7" /></button>
       </div>
     </div>
@@ -20,21 +21,22 @@
   <h3 class="font-source-sans-pro m-auto w-4/5 text-base">Liste des tickets</h3>
   <div class="mx-auto grid w-4/5 grid-cols-3" v-for="billet in listeBillet" :key="billet">
     <div class="flex h-10 overflow-hidden rounded-l-sm text-black">
-      <div class="bg-true-gray-25 flex items-center justify-center border-[1px] px-5">Date</div>
-      <input class="w-full" type="text" placeholder="Date du billet" v-model="billet.date" required />
+      <div class="bg-cyan-600 flex items-center justify-center border-[1px] px-5">Date</div>
+      <input class="w-full bg-slate-100 pl-2" type="text" placeholder="Date du billet" v-model="billet.date" required />
     </div>
     <div class="flex h-10 overflow-hidden rounded-l-sm text-black">
-      <div class="bg-true-gray-25 flex items-center justify-center border-[1px] px-5">Nom</div>
-      <input class="w-full" type="text" placeholder="Nom du billet" v-model="billet.nom" required />
+      <div class="bg-cyan-600 flex items-center justify-center border-[1px] px-5">Nom</div>
+      <input class="w-full bg-slate-100 pl-2" type="text" placeholder="Nom du billet" v-model="billet.nom" required />
     </div>
     <div class="flex h-10 w-full overflow-hidden rounded-r-sm text-black">
-      <div class="bg-true-gray-25 flex items-center justify-center border-[1px] px-5">Prix</div>
-      <input class="w-full" type="text" placeholder="Prix du billet" v-model="billet.prix" required />
-      <div class="flex w-fit gap-3 bg-white px-3">
+      <div class="bg-cyan-600 flex items-center justify-center border-[1px] px-5">Prix</div>
+      <input class="w-full bg-slate-100 pl-2" type="text" placeholder="Prix du billet" v-model="billet.prix" required />
+      <div class="flex w-fit gap-3 bg-cyan-600 px-3">
         <button type="button" @click.prevent="updateBillet(billet)"><SaveIcon class="w-7" /></button>
         <button type="button" @click.prevent="deleteBillet(billet)"><TrashIcon class="w-7" /></button>
       </div>
     </div>
+  </div>
   </div>
 </template>
 <script>

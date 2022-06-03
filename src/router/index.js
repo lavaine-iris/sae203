@@ -10,7 +10,10 @@ import ProgView from '../views/ProgView.vue'
 import MentionsView from '../views/MentionsView.vue'
 import StyleView from '../views/StyleView.vue'
 import NotFoundComponent from '../views/404.vue'
-import CreateView from '../views/billetterie/CreateView.vue'
+import GestionView from '../views/billetterie/GestionView.vue'
+import CreateView from '../views/artistes/CreateView.vue'
+import DeleteView from '../views/artistes/DeleteView.vue'
+import UpdateView from '../views/artistes/UpdateView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,7 +29,10 @@ const router = createRouter({
     { path: '/Mentions', name: 'Mentions', component: MentionsView },
     { path: '/style-guide', name: 'Style', component: StyleView },
     { path: '/:pathMatch(.*)', component: NotFoundComponent },
+    { path: '/Gestion', name: 'Gestion', component: GestionView },
     { path: '/Create', name: 'Create', component: CreateView },
+    { path: '/Delete/:id', name: 'Delete', component: DeleteView },
+    { path: '/Update/:id', name: 'Update', component: UpdateView },
     // ici les autre routes
   ]
 })
